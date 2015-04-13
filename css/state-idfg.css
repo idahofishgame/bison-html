@@ -26,7 +26,7 @@ body.cke_editable { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; fo
 /* Header */
 header { background: none; height: auto; border-bottom: none; }
 h2.block-title { font-size: 18px; margin-bottom: 10px; }
-header#navbar{ background:url(https://fishandgame.idaho.gov/ifwis/core/tools/randomimage/fgheader.jpg) #F5F5ED no-repeat bottom center;}
+header#navbar{ background:url(//fishandgame.idaho.gov/ifwis/rest/services/web/tools/randomimage/fgheader.jpg) #F5F5ED no-repeat bottom center;}
 .navbar.container { max-width: 1170px; margin-top: 0; padding-top: 10px }
 .dropdown-menu { background-color: #EBEAD9; padding: 2px; font-size: 13px; }
 .topnav {border-bottom: 1px solid #D3CFB9;}
