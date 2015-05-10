@@ -1,0 +1,8 @@
+#page-header, #page-header .region { background: #FFF; display: block; }
+#page-header .region a, #page-header .region button { color: #5C4383; }
+#page-header button.navbar-toggle { float: left; }
+#page-header .navbar-brand { padding: 15px 0 15px 15px; }
+/* Desktop */
+@media (min-width: 768px) {
+  #page-header .navbar-brand { padding: 15px; }
+}
