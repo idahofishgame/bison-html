@@ -1,4 +1,4 @@
-Living Style Guide for thhe IDFG website.
+Living Style Guide for the IDFG website.
 ---------------------------
 This site is a living style guide for the Idaho Fish and Game website.
 
