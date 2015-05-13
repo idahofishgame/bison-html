@@ -1,7 +1,9 @@
-Initial bootstrap-based template for the IDFG website.
+Living Style Guide for thhe IDFG website.
 ---------------------------
-Codename 'bison' this theme closely mimics the existing site while transferring over to bootstrap.  This theme repository holds the html template for the bison Drupal theme.  This is a downstream repo.  Changes to the bison theme will be migrated here once tested and established.
+This site is a living style guide for the Idaho Fish and Game website.
 
-A second bootstrap-based theme is under production codename 'cervus'.  You may wish to wait to migrate your application to bootstrap until this theme is in production.  If it is a new application, we'd encourage you to use bison.
+Based off the excellent bootstrap documentation available at getbootstrap.com this site demonstrates how the various components and styles will display.
 
-View this template live at http://fishandgame.idaho.gov/ifwis/examples/bison-html
+At present this code illustrates the style of our first bootstrap-based theme, codename 'bison'. A second bootstrap-based theme is also under production codename 'cervus'.  
+
+View this style guide live at http://fishandgame.idaho.gov/ifwis/style
