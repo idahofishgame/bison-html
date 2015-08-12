@@ -26,7 +26,7 @@ function loadMainMenu () {
 }
 
 function updateLoginInfo () {
-  $('.accounts-login-link a').attr('href', $('#navbar-login a').attr('href') + '?returnurl=' + window.location.href);
+  $('.accounts-login-link a').attr('href', $(this).attr('href') + '?returnurl=' + window.location.href);
   $.getJSON('https://idfg.idaho.gov/accounts/user/state?callback=?', null, function(data) {
     if (data.user !== null) {
       $('.accounts-login-link a .link-text').text(data.user);
