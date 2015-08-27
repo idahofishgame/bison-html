@@ -15,7 +15,7 @@ function getMainMenu() {
     , crossDomain: true
     , dataType: 'jsonp'
     , jsonpCallback: 'jQuery11120031282627722248435_1439335233466'
-    , success: function loadMenuFromJsonSuccessCallback (data, requestStatus) {
+    , success: function (data, requestStatus) {
         if (requestStatus === 'success') {
           $('#block-idfg-components-menu').replaceWith(data);
           getUser();
@@ -42,7 +42,7 @@ function getUser() {
     cache: false
     , crossDomain: true
     , dataType: 'jsonp'
-    , success: function loadMenuFromJsonSuccessCallback (data, requestStatus) {
+    , success: function (data, requestStatus) {
         if (requestStatus === 'success') {
           if (data.user) {
             updateLoginText(data.user);
