@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
   getMainMenu();
-  updateLoginLink();
+  updateLoginLinks();
   getUser();
 });
 
@@ -19,6 +19,7 @@ function getMainMenu() {
         if (requestStatus === 'success') {
           $('#block-idfg-components-menu').replaceWith(data);
           getUser();
+          updateLoginLinks();
         }
       }
     , type: 'GET'
@@ -27,11 +28,12 @@ function getMainMenu() {
 }
 
 // add a return URL to the login URL if not present for post-login redirect
-function updateLoginLink() {
-  var currentUrl = window.location.href;
-  var loginUrl = $('.accounts-login-link a').attr('href');
-  if (loginUrl.indexOf(currentUrl) < 0) {
-    $('.accounts-login-link a').attr('href', loginUrl + '?returnurl=' + currentUrl);
+function updateLoginLinks() {
+  var loginElements = $('.accounts-login-link a');
+  for (var i = 0; i < loginElements.length; i++) {
+    if ($(loginElements[i]).attr('href').indexOf('?returnurl=') < 0) {
+      $(loginElements[i]).attr('href', $(loginElements[i]).attr('href') + '?returnurl=' + window.location.href);
+    }
   }
 }
 
