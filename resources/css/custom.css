@@ -1,8 +1,125 @@
+/**
+  *Added contextual elements from Bison theme
+  */
 #page-header, #page-header .region { background: #FFF; display: block; }
 #page-header .region a, #page-header .region button { color: #48593E; }
-#page-header button.navbar-toggle { float: left; }
-#page-header .navbar-brand { padding: 15px 0 15px 15px; }
-/* Desktop */
+#page-header .region a, #page-header .region button { color: #48593E; }
+#page-header button.navbar-toggle { float: left; margin-top: 4px; }
+#page-header .navbar-brand { font-weight: bold;margin-left: -12px;}
+.navbar-toggle {
+  margin-bottom: 0;
+}
+#page-header .navbar-nav li a:hover {
+  border-left:1px solid #48593E;
+  padding-left: 14px;
+}
 @media (min-width: 768px) {
-  #page-header .navbar-brand { padding: 15px; }
+  .bs-docs-header .container { padding-left: 25px; }
+  #page-header .navbar-nav li a:focus,#page-header .navbar-nav li a:hover { border-left:none; padding-left: 15px; }
+}
+
+/**
+  * Colors overridden for Bison-like Green Docs.
+  * #563d7c --> #48593E
+  * #cdbfe3 --> #D3E2C0
+  * #6F5499 --> #727F59
+  */
+.btn-outline{
+  color:#48593E;
+  border-color:#48593E
+}
+
+.btn-outline:active,.btn-outline:focus,.btn-outline:hover{
+  background-color:#48593E;
+  border-color:#48593E
+}
+
+.btn-outline-inverse{
+  border-color:#D3E2C0
+}
+
+.btn-outline-inverse:active,.btn-outline-inverse:focus,.btn-outline-inverse:hover{
+  color:#48593E;
+}
+
+.bs-docs-booticon{
+  background-color:#48593E;
+}
+
+.bs-docs-booticon-inverse{
+  color:#48593E;
+}
+
+.bs-docs-booticon-outline{
+  border:1px solid #D3E2C0
+}
+
+#skippy{
+  background-color:#727F59;
+}
+
+.bs-docs-nav .navbar-brand,.bs-docs-nav .navbar-nav>li>a{
+  color:#48593E
+}
+
+.bs-docs-nav .navbar-toggle .icon-bar{
+  background-color:#48593E
+}
+
+.bs-docs-header,.bs-docs-masthead{
+  color:#D3E2C0;
+  background-color:#727F59;
+  background-image:-webkit-gradient(linear,left top,left bottom,from(#48593E),to(#727F59));
+  background-image:-webkit-linear-gradient(top,#48593E 0,#727F59 100%);
+  background-image:-o-linear-gradient(top,#48593E 0,#727F59 100%);
+  background-image:linear-gradient(to bottom,#48593E 0,#727F59 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#48593E', endColorstr='#727F59', GradientType=0);
+}
+
+.bs-docs-sidebar .nav>li>a:focus,.bs-docs-sidebar .nav>li>a:hover{
+  color:#48593E;
+  border-left:1px solid #48593E;
+  background-color: #EEE;
+}
+.bs-docs-sidebar .nav>.active:focus>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active>a {
+    color:#48593E;
+    border-left:2px solid #48593E;
+    background-color: #EEE;
+}
+
+.back-to-top:hover, .bs-docs-theme-toggle:hover {
+  color: #48593E;
+}
+
+.color-swatches .bs-purple{
+  background-color:#48593E
+}
+
+.color-swatches .bs-purple-light{
+  background-color:#c7bfd3
+}
+
+.color-swatches .bs-purple-lighter{
+  background-color:#e5e1ea
+}
+
+.bs-glyphicons li:hover{
+  background-color:#48593E
+}
+
+.bs-brand-logos{
+  color:#48593E;
+}
+
+.bs-brand-logos .inverse{
+  background-color:#48593E
+}
+
+.btn-clipboard-hover{
+  background-color:#48593E;
+  border-color:#48593E
+}
+
+.anchorjs-link {
+  left:22px;
 }

@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bison Bootstrap Custom</title>
-  <meta name="description" content="">
+  <meta name="description" content="IDFG Bison theme customizations.">
   <meta name="robots" content="index,follow">
-  <meta name="DCTERMS.subject" content="">
-  <meta name="DCTERMS.creator" content="">
-  <meta name="DCTERMS.created" content="">
+  <meta name="DCTERMS.subject" content="Customization examples">
+  <meta name="DCTERMS.creator" content="Idaho Fish and Game">
+  <meta name="DCTERMS.created" content="2015-04-01">
   <meta name="DCTERMS.language" content="EN">
   <meta name="DCTERMS.publisher" content="State of Idaho">
-  <meta name="DCTERMS.modified" content="">
+  <meta name="DCTERMS.modified" content="2016-02-09">
   <meta name="DCTERMS.format" content="text/html">
   <link rel="schema.DCTERMS" href="//purl.org/dc/terms/">
   <link rel="icon" href="https://idfg.idaho.gov/favicon.ico" type="image/x-icon">
@@ -146,9 +146,9 @@
 
     <div class="bs-docs-header" tabindex="-1">
       <div class="container">
-        <h1>Custom Stuff</h1>
+        <h1>Customizations</h1>
 
-        <p>Placeholder for custom components and styles we add on top of Twitter
+        <p>Custom components and styles added on top of Twitter
           Bootstrap.</p>
       </div>
     </div>
@@ -161,20 +161,112 @@
     <div class="row">
       <div class="col-md-9" role="main">
         <div class="bs-docs-section">
-          <h1 id="custom" class="page-header">Insert Custom
-            Here<a class="anchorjs-link" href="#glyphicons"><span class="anchorjs-icon"></span></a>
+          <h1 id="callouts" class="page-header">Callouts
+            <a class="anchorjs-link" href="#callouts"><span class="anchorjs-icon"></span></a>
           </h1>
 
-          <h2>Coming soon</h2>
+          <p>The Bootstrap documentation has really nice callouts to draw attention to important information, but for some reason these callouts are not included in the actual Bootstrap distribution. The generic callout CSS and the styles for the info, warning, and danger callouts is a direct pull from the live CSS for the docs. Styles for default, success, and primary, are created by <a href="http://cpratt.co/twitter-bootstrap-callout-css-styles/" title="Source">Chris Pratt</a>, as the Bootstrap docs do not employ these.</p>
 
-          <p>Customizations we add the Bootstrap framework will be highlighted
-            here. This would be an appropriate spot to highlight color
-            pallettes, common page elements and specific modifications made to
-            support our website.</p>
+          <a class="anchorjs-link" href="#callouts-examples"><span class="anchorjs-icon"></span></a>
+          <h2 id="callouts-examples">Examples</h2>
+          
+          <div class="bs-example" data-example-id="callouts">
+            <div class="bs-callout bs-callout-default">
+              <h4>Default Callout</h4>
+              This is a default callout.
+            </div>
+
+            <div class="bs-callout bs-callout-primary">
+              <h4>Primary Callout</h4>
+              This is a primary callout.
+            </div>
+
+            <div class="bs-callout bs-callout-success">
+              <h4>Success Callout</h4>
+              This is a success callout.
+            </div>
+
+            <div class="bs-callout bs-callout-info">
+              <h4>Info Callout</h4>
+              This is an info callout.
+            </div>
+
+            <div class="bs-callout bs-callout-warning">
+              <h4>Warning Callout</h4>
+              This is a warning callout.
+            </div>
+
+            <div class="bs-callout bs-callout-danger">
+              <h4>Danger Callout</h4>
+              This is a danger callout.
+            </div>
+          </div>
+          <div class="highlight">
+<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Default Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a default callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Primary Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a primary callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Success Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a success callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Info Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a info callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Warning Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a warning callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>Danger Callout<span class="nt">&lt;h4&gt;</span>
+  <span>This is a danger callout.</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+          </div>
+
+          <h1 id="todo" class="page-header">#TODO
+            <a class="anchorjs-link" href="#todo"><span class="anchorjs-icon"></span></a>
+          </h1>
+
+          <p>Many classes and components are lacking documentation.  Please help by adding the appropriate documentation so others may use these components successfully.</p>
+          <h4>An Incomplete List</h4>
+          <ul>
+            <li>Contextual Navigation responsive elements</li>
+            <li>Issue Tags and other tag styles</li>
+          </ul>
+          
         </div>
       </div>
+<div class="col-md-3" role="complementary">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+    <ul class="nav bs-docs-sidenav">
+      <li>
+        <a href="#callouts">Callouts</a>
+        <ul class="nav">
+          <li><a href="#callouts-examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">#TODO</a>
+        <ul class="nav">
+          <li><a href="#">Context Navs</a></li>
+          <li><a href="#">Issue Tags</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="back-to-top" href="#top">
+      Back to top
+    </a>
+
+  </nav>
     </div>
   </div>
+</div>
 </div>
 <!--/main-container-->
 <div id="footer_context" class="row">
@@ -277,6 +369,6 @@
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="https://idfg.idaho.gov/sites/all/themes/bison/js/login-menu.js"></script>
-<script src="resources/js/docs.min.js"></script>
+<script src="../resources/js/docs.min.js"></script>
 </body>
 </html>
