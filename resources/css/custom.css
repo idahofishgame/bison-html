@@ -116,10 +116,9 @@
 }
 
 .btn-clipboard-hover{
-  background-color:#48593E;
-  border-color:#48593E
+  display: none;
 }
 
 .anchorjs-link {
-  left:22px;
+  display: none;
 }
