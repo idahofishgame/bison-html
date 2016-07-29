@@ -140,6 +140,35 @@
     <div class="row">
       <div class="col-md-9" role="main">
         <div class="bs-docs-section">
+        
+        <h1 id="services" class="page-header">Web Services
+            <a class="anchorjs-link" href="#services"><span class="anchorjs-icon"></span></a>
+          </h1>
+
+          <p>To provide a shared and up-to-date main menu and consistent login, there are two separate web services provided.  The quickest way to implement these is by including <a href="https://idfg.idaho.gov/sites/all/themes/bison/2.1/js/login-menu.js" title="View Source">https://idfg.idaho.gov/sites/all/themes/bison/2.1/js/login-menu.js</a> in your html, preferrably as this page has done at the end of the document body.  Once included, provided the elements are present in your document, they will stay current.</p>
+          <div class="highlight">
+            <pre>
+              <code class="language-html" data-lang="html">
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://idfg.idaho.gov/sites/all/themes/bison/2.1/js/login-menu.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+              </code>
+            </pre>
+          </div>
+          <p>If updates are made to our website that require changes to be made to your document object model (DOM), these services as well as the theme's css and js will also be versioned.  Versioning will allow us to change the look of the website without breaking your application.  When new versions are available you will be notified and you will be able to upgrade at your leisure.  This matches the pattern used by most content delivery networks (CDN) to ensure backwards compatibility.</p>
+          <p>While this including this javascript is the quickest way to include these components, as a developer you are welcome to roll your own javascript or server-side code against the two web services which are called.  The menu endpoint in particular would be more performant if you make a single call and cache the result in your application.</p>
+          <a class="anchorjs-link" href="#available-services"><span class="anchorjs-icon"></span></a>
+          <h2>Available Services</h2>
+          <h3>Main Menu</h3>
+          <p>Returned as a jsonp encoded string to replace the contents of <code>#block-idfg-components-menu</code>.  The main menu primary links should be included in your DOM to avoid a visual flash on render and allow graceful degradation.<br/><a href="https://idfg.idaho.gov/api/1.0/site/menu" title="View JSON">https://idfg.idaho.gov/api/1.0/site/menu</a></p>
+          <h3>Login <small>(Optional)</small></h3>
+          <p>Returns a user name or null if not authenticated.  Typically you want to query the idfg.idaho.gov/accounts endpoint.  Developers on IFWIS infrastructure are encouraged to use the IFWIS endpoint if using integrated authentication.  Returned as a jsonp, use the value to update the displayed login link found in the <code>.accounts-login-link</code>. This is an optional enhancement, as without this all functionality is available.<br/><a href="https://idfg.idaho.gov/accounts/user/state" title="View JSON">https://idfg.idaho.gov/accounts/user/state</a> (<a href=" https://fishandgame.idaho.gov/ifwis/accounts-net/user/state" title="View JSON">IFWIS endpoint</a>)</p>
+            <div class="alert alert-warning"> <span class="glyphicon glyphicon-transfer"></span> <strong>Additional services are in the works.</strong></br>As the look of idfg.idaho.gov matures we will be providing more web services to ease the maintenance and display of page elements, alerts and branding.</div>
+            <a class="anchorjs-link" href="#other-services"><span class="anchorjs-icon"></span></a>
+          <h2>Other Implementations</h2>
+          <ul>
+            <li><a href="https://idfg.idaho.gov/species" title="View website"><strong>Idaho Species Catalog</strong></a> - Server-side caching in PHP of the main menu.  <a href="https://github.com/idahofishgame/idfg_components/blob/master/idfg_components.module#L181" title="View PHP">View Source</a></li>
+            <li><a href="http://data.idfggis.opendata.arcgis.com/datasets" title="View website"><strong>Open Data Portal on ArcGIS.com</strong></a> - Pure JavaScript implementation of main menu calling web services from a separate domain.  <a href="https://github.com/idahofishgame/opendata/blob/master/footer.html#L138" title="View JS">View Source</a></li>
+          </ul>
+        
           <h1 id="callouts" class="page-header">Callouts
             <a class="anchorjs-link" href="#callouts"><span class="anchorjs-icon"></span></a>
           </h1>
@@ -316,6 +345,14 @@
 <div class="col-md-3" role="complementary">
   <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
     <ul class="nav bs-docs-sidenav">
+      <li>
+        <a href="#services">Web Services</a>
+        <ul class="nav">
+          <li><a href="#available-services">Available Services</a></li>
+          <li><a href="#other-services">Other Implementations</a></li>
+        </ul>
+      </li>
+      <li>
       <li>
         <a href="#callouts">Callouts</a>
         <ul class="nav">
