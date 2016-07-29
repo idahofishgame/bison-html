@@ -181,43 +181,135 @@
             </div>
           </div>
           <div class="highlight">
-<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-default"</span><span class="nt">&gt;</span>
+<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-default"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Default Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a default callout.</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-primary"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-primary"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Primary Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a primary callout.</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-success"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-success"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Success Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a success callout.</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-info"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-info"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Info Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a info callout.</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-warning"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-warning"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Warning Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a warning callout.</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span><span class="na">class=</span><span class="s">"bs-callout bs-callout-danger"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"bs-callout bs-callout-danger"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4&gt;</span>Danger Callout<span class="nt">&lt;h4&gt;</span>
   <span>This is a danger callout.</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
           </div>
 
+          <h1 id="context-menu" class="page-header">Contextual Menus
+            <a class="anchorjs-link" href="#context_menu"><span class="anchorjs-icon"></span></a>
+          </h1>
+
+          <p>Bison adds a standard sidebar and mobile contextual menu design.  On desktop it appears as light gray.  On mobile it appears as a dropdown menu triggered by a chevron.  This may be used optionally along with a page header context to add branding to sections of our webpages.</p>
+
+          <a class="anchorjs-link" href="#context-menu-examples"><span class="anchorjs-icon"></span></a>
+          <h2 id="context-menu-examples">Example</h2>
+          <div class="bs-example" data-example-id="context-menu">
+            <header role="banner" id="page-header-context">
+              <div class="container">
+                <div class="region region-header">
+                  <section id="block-idfg-branding-contextual-head" class="block block-idfg-branding clearfix">
+                    <div id="page-header-context" style="height:280px; background-image: url(../resources/images/bison-herd-lamar-valley-public-domain-by-flickr-yellowstonnps.jpg)">
+                      <div class="container region">
+                        <h2 class="header-context"><a href="../" title="Bison Homepage">Bison Style Guide</a></h2>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </header>
+            <div class="row">
+              <aside class="col-sm-2" role="complementary">
+                <div class="navbar navbar-context">
+                  <div class="navbar-inner">
+                    <div class="navbar-top">
+                      <a class="brand" title="Bison Homepage" href="../"><h2>Bison Style Guide</h2></a>
+                      <button id="context-menu-dropdown" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".context-nav">
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <div class="collapse navbar-collapse context-nav">
+                      <section id="block-idfg-branding-contextual-nav" class="block block-idfg-branding clearfix">
+                        <ul class="menu nav">
+                          <li><a href="../css/">CSS</a></li>
+                          <li><a href="../components/">Components</a></li>
+                          <li><a href="../javascript/">JavaScript</a></li>
+                          <li class="active"><a class="active" href="#">Custom</a></li>
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <section class="col-sm-10">
+                <h1 class="page-header">Custom</h1>
+                <div class="region region-content"><p>Customized components and styles added on top of Twitter Bootstrap.</p><p>This section demonstrates the contextual menu behaviour used for sidebars on desktop and branded drop-downs on mobile.  The header image above illustrates how a landing page may alter the header height for emphasis.  Removing the inline height attribute you will see the default height which would typically be used on subpages.  Optionally you may choose a background color or image for mobile.</p></div>
+              </section>
+            </div>
+          </div>
+          <div class="highlight">
+<pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span><span class="na"> role=</span><span class="s">"banner" id=</span><span class="s">"page-header-context"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"region region-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;section</span><span class="na"> id=</span><span class="s">"block-idfg-branding-contextual-head"</span><span class="na"> class=</span><span class="s">"block block-idfg-branding clearfix"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span><span class="na"> id=</span><span class="s">"page-header-context"</span><span class="na"> style=</span><span class="s">"height:280px; background-image: url(../resources/images/bison-herd-lamar-valley-public-domain-by-flickr-yellowstonnps.jpg)"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"container region"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span><span class="na"> class=</span><span class="s">"header-context"</span><span class="nt">&gt;</span><span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"../"</span><span class="na"> title=</span><span class="s">"Bison Homepage"</span><span class="nt">&gt;</span>Bison Style Guide<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;aside</span><span class="na"> class=</span><span class="s">"col-sm-2"</span><span class="na"> role=</span><span class="s">"complementary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"navbar navbar-context"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"navbar-inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"navbar-top"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span><span class="na"> class=</span><span class="s">"brand"</span><span class="na"> title=</span><span class="s">"Bison Homepage"</span><span class="na"> href=</span><span class="s">"../"</span><span class="nt">&gt;</span><span class="nt">&lt;h2&gt;</span>Bison Style Guide<span class="nt">&lt;/h2&gt;</span><span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;button</span><span class="na"> id=</span><span class="s">"context-menu-dropdown"</span><span class="na"> type=</span><span class="s">"button"</span><span class="na"> class=</span><span class="s">"navbar-toggle"</span><span class="na"> data-toggle=</span><span class="s">"collapse"</span><span class="na"> data-target=</span><span class="s">".context-nav"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span><span class="na"> class=</span><span class="s">"glyphicon glyphicon-chevron-down"</span><span class="na"> aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"collapse navbar-collapse context-nav"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;section</span><span class="na"> id=</span><span class="s">"block-idfg-branding-contextual-nav"</span><span class="na"> class=</span><span class="s">"block block-idfg-branding clearfix"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span><span class="na"> class=</span><span class="s">"menu nav"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li&gt;</span><span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"../css/"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span><span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"../components/"</span><span class="nt">&gt;</span>Components<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li&gt;</span><span class="nt">&lt;a</span><span class="na"> href=</span><span class="s">"../javascript/"</span><span class="nt">&gt;</span>JavaScript<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span><span class="na"> class=</span><span class="s">"active"</span><span class="nt">&gt;</span><span class="nt">&lt;a class=</span><span class="s">"active" href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Custom<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/aside&gt;</span>
+  <span class="nt">&lt;section</span><span class="na"> class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span><span class="na"> class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>Custom<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;div</span><span class="na"> class=</span><span class="s">"region region-content"</span><span class="nt">&gt;</span><span class="nt">&lt;p&gt;</span>Customized components and styles added on top of Twitter Bootstrap.<span class="nt">&lt;/p&gt;</span><span class="nt">&lt;p&gt;</span>This section demonstrates the contextual menu behaviour used for sidebars on desktop and branded drop-downs on mobile.  The header image above illustrates how a landing page may alter the header height for emphasis.  Removing the inline height attribute you will see the default height which would typically be used on subpages.  Optionally you may choose a background color or image for mobile.<span class="nt">&lt;/p&gt;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+          </div>
+          
+          
           <h1 id="todo" class="page-header">#TODO
             <a class="anchorjs-link" href="#todo"><span class="anchorjs-icon"></span></a>
           </h1>
 
           <p>Many classes and components are lacking documentation.  Please help by adding the appropriate documentation so others may use these components successfully.</p>
-          <h4>An Incomplete List</h4>
-          <ul>
-            <li>Contextual Navigation responsive elements</li>
-            <li>Issue Tags and other tag styles</li>
-          </ul>
           
         </div>
       </div>
@@ -228,6 +320,12 @@
         <a href="#callouts">Callouts</a>
         <ul class="nav">
           <li><a href="#callouts-examples">Examples</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#context-menu">Contextual Menus</a>
+        <ul class="nav">
+          <li><a href="#context-menu-examples">Example</a></li>
         </ul>
       </li>
       <li><a href="#todo">#TODO</a></li>
