@@ -12,13 +12,13 @@
   <meta name="DCTERMS.created" content="2015-04-01">
   <meta name="DCTERMS.language" content="EN">
   <meta name="DCTERMS.publisher" content="State of Idaho">
-  <meta name="DCTERMS.modified" content="2016-08-10">
+  <meta name="DCTERMS.modified" content="2017-02-11">
   <meta name="DCTERMS.format" content="text/html">
-  <link rel="schema.DCTERMS" href="//purl.org/dc/terms/">
+  <link rel="schema.DCTERMS" href="https://purl.org/dc/terms/">
   <link rel="icon" href="https://idfg.idaho.gov/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="https://idfg.idaho.gov/apple-touch-icon.png">
-  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
-  <link href="https://idfg.idaho.gov/sites/all/themes/bison/2.1/css/bison.css" media="all" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
+  <link href="https://idfg.idaho.gov/sites/all/themes/bison/2.1/css/bison.min.css" media="all" rel="stylesheet" />
   <link href="resources/css/docs.min.css" media="all" rel="stylesheet"/>
   <link href="resources/css/custom.css" media="all" rel="stylesheet"/>
 </head>
@@ -42,7 +42,7 @@
         <section id="block-idfg-components-search" class="block block-idfg-components clearfix">
           <ul class="menu nav nav-pills navbar-right">
             <li id="navbar-search-form"><form action="https://idfg.idaho.gov/search" id="idfg-site-search" method="get" class="form-inline hideSubmitButton-processed"><input class="form-control form-text" id="search" name="search" placeholder="Search" required type="text"><button type="submit" class="btn glyphicon glyphicon-search"></button></form></li>
-            <li style="display: block;" id="navbar-login" class="accounts-login-link"><a href="https://idfg.idaho.gov/accounts" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="link-text">My account</span></a></li>
+            <li id="navbar-login" class="accounts-login-link"><a href="https://idfg.idaho.gov/accounts" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="link-text">My account</span></a></li>
           </ul>
         </section>
       </div>
@@ -64,6 +64,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user?returnurl=/home" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></span>
+      <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
     </div>
   </div>
 </header>
@@ -85,8 +87,6 @@
               <li class="expanded dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="https://idfg.idaho.gov/public/science/" title="Science">Science</a></li>
               <li class="expanded dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="https://idfg.idaho.gov/public/enforce/" title="Enforcement">Enforcement</a></li>
               <li class="expanded dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="https://idfg.idaho.gov/public/about/" title="About Us">About</a></li>
-              <li class="navbar-mobile active"><a href="https://idfg.idaho.gov/search/" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search</a></li>
-              <li class="navbar-mobile active accounts-login-link"><a href="https://idfg.idaho.gov/accounts/user" title="User Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="link-text">My Account</span></a></li>
             </ul>
           </section>
         </div>
@@ -201,7 +201,7 @@
           <hr class="half-rule">
           <div class="row bs-docs-featured-sites">
             <div class="col-xs-6 col-sm-3">
-              <a href="https://fishandgame.idaho.gov/species" title="Idaho Species Catalog">
+              <a href="https://idfg.idaho.gov/species" title="Idaho Species Catalog">
                 <img src="resources/images/species.png" alt="Idaho Species Catalog" class="img-responsive">
               </a>
             </div>
@@ -378,9 +378,13 @@
   </div>
 </div>
 <!--/row-->
-<script src="https://cdn.jsdelivr.net/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://idfg.idaho.gov/sites/all/themes/bison/2.1/js/login-menu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://idfg.idaho.gov/sites/all/themes/bison/2.1/js/login-menu.min.js"></script>
 <script src="resources/js/docs.min.js"></script>
+<!-- HTML5 element support for IE6-8 -->
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+<![endif]-->
 </body>
 </html>
